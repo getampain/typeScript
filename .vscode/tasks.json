@@ -6,7 +6,29 @@
         {
             "label": "echo",
             "type": "shell",
-            "command": "echo Hello"
-        }
+            //기본 커맨드
+            //"command": "echo Hello"
+            "command": "ts-node ${file}",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+
+        },
+
+        //일반적인 폴더단위 빌드
+
+        // {
+        //     "type": "typescript",
+        //     "tsconfig": "tsconfig.json",
+        //     "problemMatcher": [
+        //         "$tsc"
+        //     ],
+        //     "group": {
+        //         "kind": "build",
+        //         "isDefault": true
+        //     },
+        //     "label": "tsc: 빌드 - tsconfig.json"
+        // }
     ]
 }
