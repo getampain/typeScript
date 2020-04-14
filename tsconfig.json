@@ -1,0 +1,9 @@
+{
+    "extends": "./tsconfig/config/base.json",
+
+    "compilerOptions": {
+        "outFile": "./dist/extends/out.js",
+        "target": "es5",
+      },
+  }
+  
