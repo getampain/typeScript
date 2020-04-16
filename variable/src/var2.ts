@@ -18,6 +18,23 @@ let testUndefine:undefined = undefined;
 var person = {
     name : "Jhon dow"
 };
+
+
+const basicObject:{
+    "name" : string,
+    "e-mail" : string,
+    "age" : number
+} = {
+
+    "name" : "상욱",
+    "e-mail" : "sss@sss.com",
+    "age" : 30
+};
+
+
+basicObject.age++;
+console.log("object " + JSON.stringify(basicObject));
+
 //객체 리터럴을 null값으로 초기화 하기 위해선  "strict": true,  해당옵션을 false로 변화시켜야한다.
 //person = null;
 
