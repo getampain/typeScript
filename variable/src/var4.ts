@@ -33,4 +33,14 @@ console.log("any" + arrayAny);
 console.log("union" + arrayUnion);
 
 
+var kusoStory ="dlwp tmftmf dpselddml 70vj tpsxmsms dhkTek"
 
+let genArray:Array<string> = ["11","@222","!@#!@#@!#"];
+let genUnion:Array<string | number> = ["2123",123,"123"];
+let genRef: typeof genUnion = ["2123",123,"123"];
+
+
+//whrmaaks ej qjxlaus wnakf start
+
+
+JSON.stringify(arrayAny);
