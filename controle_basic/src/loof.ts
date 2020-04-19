@@ -66,6 +66,22 @@ printProfile({name:"jhone"});
 printProfile({name:"jhone", nation:"korea"});
 printProfile({nation:"korea"});
 
+//뒤의 값이 아무것도 없을 경우 이다
+function printProfile2({name = "hongGilDong", nation = "korea"}){
+    console.log(name,nation);
+}
+printProfile2({name:"jhone"});
+printProfile2({name:"jhone", nation:"korea"});
+printProfile2({nation:"korea"});
 
+type C = {
+    b?: number,
+    a?: string
+}
 
+function testType( {a,b}: C  ):void{
+    console.log(a,b);
+}
 
+testType({a:"apple"});
+testType({});
