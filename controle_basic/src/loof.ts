@@ -58,7 +58,7 @@ for (let value of myIterable) {
     //console.log(value); 
 }
 
-function printProfile({name = "hongGilDong", nation = "korea"} = {name:"noName", nation:"NoContury"}){
+function printProfile({name = "hongGilDong", nation = "korea"}:{ name?:string, nation?:string} = {name:"noName", nation:"NoContury"}){
     console.log(name,nation);
 }
 printProfile();
@@ -84,4 +84,4 @@ function testType( {a,b}: C  ):void{
 }
 
 testType({a:"apple"});
-testType({});
+testType({b:21});

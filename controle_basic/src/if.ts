@@ -35,3 +35,16 @@ switch(testNum % 2){
     case 2 :
         console.log(2);
 }
+
+
+function testDis([first111="default1",second111=-2]:[string,number] = ["default", -1]){
+
+    console.log(first111, second111);
+
+}
+
+testDis();
+testDis(["123",3]);
+
+//오브젝트랑 다르게 이런 형식으로는 대처가 안됨
+//testDis(["mk",]);
