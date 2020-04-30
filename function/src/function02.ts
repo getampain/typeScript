@@ -42,8 +42,8 @@
       console.log(temp3);
 
 
-      let test = function(array_001:number[]){
-        temp1.reduce((a,b) => a+b)
+      let test = function(array_001:number[]):number{
+        return array_001.reduce((a,b) => a+b)
       }
       console.log(test(temp1));
 
