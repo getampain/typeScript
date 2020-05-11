@@ -39,7 +39,7 @@
     let testFunction3 : (let1 : string, let2 : string) => string = (let1, let2) => let1+let2;
 
 
-
+ 
     //함수 형태를 재활용 하는법 
     type calcType = (a:number,b:number) => number;
     let funcAdd:calcType = (a, b) => a+b;
