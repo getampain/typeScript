@@ -81,4 +81,21 @@
 
     console.log(newClass.numberOfWheel);
 
+
+    class cube{
+        constructor(public width:number, private length:number, protected height:number){
+
+        }
+        getVolum(){
+            return this.width * this.height * this.length;
+        }
+            
+    
+    }
+
+    let [a, b, c] = [1,2,3];
+    let cubeValue = new cube(a,b,c);
+
+    console.log(cubeValue.width);
+    console.log(cubeValue.getVolum());
 }
