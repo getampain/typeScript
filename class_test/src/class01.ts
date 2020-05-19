@@ -1,6 +1,7 @@
 {
     //클래스에서는 const, let, var을 사용하는형식이
-    //아닌 private public protected를 사용한다
+    //아닌 private public protected readOnly를 사용한다
+    //readonly 변경이 불가능하지만 어디서나 호출가능한 타입
     //private는 해당 클레스에서만 protected는 상속받은 클레스에서 까지 사용 가능하다
     class triangle{
         x: number;
