@@ -50,4 +50,44 @@
 
     let tet = new MyAccount();
 
+
+
+    //추상함수, 변수는 반드시 extends된곳에서 구현하여야 한다.
+    //추상함수 내에서 구현함수, 구현변수를 혼용할 수 있다.
+    abstract class AbstractBird{
+        abstract birdName:string;
+        abstract habitName:string;
+        abstract flySound(sound:string):void;
+
+        fly():void{
+            this.flySound("파닥파닥");
+        }
+        getHabitat():void{
+            console.log(this.birdName + "  " + this.habitName);
+        }
+    }
+
+    class wildGoose extends AbstractBird{
+        
+
+        constructor(public birdName: string, public habitName:string){
+            super();
+        }
+
+
+        //추상함수 오버라이딩
+        flySound(sound:string){
+            this.birdName = sound;
+        }
+
+    }
+
+    console.log("////////////////////////////");
+    let testAbstract = new wildGoose("goose","슾지");
+    console.log(testAbstract.getHabitat());
+    testAbstract.fly();
+    console.log(testAbstract.getHabitat());
+
+    
+
 }
