@@ -160,4 +160,27 @@
 
     //인터페이스는 컴파일이후에 제거된다 그러므로 typeof사용불가능이다
 
+    class Person3{
+        public full: string;
+
+
+        constructor(public name: string, public city:string){
+            this.full = city+" "+name;
+        }
+    }
+
+    let classArray: Person3[] = [
+        new Person3("kim","soul"),
+        new Person3("park","daegu"),
+        new Person3("kim","soul"),
+        new Person3("min","daejeon"),
+        new Person3("yoo","daegu")
+    ]
+
+
+    console.log(JSON.stringify(classArray));
+
+
+
+
 }
