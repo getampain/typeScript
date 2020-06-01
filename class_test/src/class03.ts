@@ -14,4 +14,19 @@
         {name:"A", city:"b"},
 
     ]
+
+    interface Persons{
+        name:string;
+        city:string;
+    }
+    //Person[] Array<Person>
+    interface PersonItems extends Array<Person>{}
+    let person5: PersonItems = [
+        {name:"A", city:"b"},
+        {name:"A", city:"b"},
+        {name:"A", city:"b"},
+        {name:"A", city:"b"},
+    ]
+
+    
 }
