@@ -69,4 +69,34 @@
 
 
     }
+
+    class Eagle3 extends BirdFilterNode2{
+        constructor(){
+            super();
+        }
+
+
+ 
+        //이렇게 한경우 맨뒤에는 any지만 string과 넘버만 가능하다
+        flight(knDistance:string):void;
+        flight(knDistance:number):void;
+        flight(knDistance:any){
+
+            //모든 오버로드된 변수를 받아 type of로 걸러주는 형식이다.
+            if(typeof knDistance == "number")
+                console.log(knDistance);
+        }
+    }
+
+    let asd = new Eagle3();
+    asd.flight("ss");
+    asd.flight("12");
+    
+    //애니를 쓴다면 해당 항목을 제외한 나머지만 가능하다.. 
+    //asd.flight(true);
+
+
+
+
+ 
 }
