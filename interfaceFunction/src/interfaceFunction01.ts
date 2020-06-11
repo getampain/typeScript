@@ -97,6 +97,35 @@
 
 
 
-
  
+}
+{
+    interface Ipoint{
+        getX(x: any):any
+    }
+
+    //extends 와 implements의 차이를 항상 구분하자
+    //위에서 했던 오버로드를  |(유니언타입)을 통해서 한번에 선언한 형식
+    
+    class testIpoint implements Ipoint{
+
+        getX(x?: string | number): any{
+            if(typeof x === "string"){
+                return x;
+            }
+            else if(typeof x === "number"){
+                return x;
+            }
+            else
+                return "hi!";
+        }
+        
+    }
+    console.log( "..............................");
+    let a: testIpoint = new testIpoint();
+    console.log( a.getX());
+    console.log( a.getX(":222"));
+    console.log( a.getX(222));
+
+
 }
